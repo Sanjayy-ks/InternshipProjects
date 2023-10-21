@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjay K S Portfolio</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="home">
+        <nav>
+            <div class="hero">
+                <h2>
+                    <span class="large-text">Sanjay's Portfolio</span> 
+                    
+                </h2>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container-section">
+        <div class="container">
+            <h3 class="centered-paragraph">
+                I am Sanjay K S,currently in my second year of studing Computer Science Engineering at
+                St.Joseph Engineering College.I am on track to graduate in 2025.
+                My academic journey has lend me to explore fields such as  Database Management, Networking, and Graphics Design. 
+                Proficient in Python, Java, C, and SQL.
+                My portfolio includes projects like Smart Dustbin,Automatic Intensity Controller.I have also delved into modeling with Matlab Simulink.
+                Beyond my coursework,I have a keen interest in Computer Vision and Data Science.
+            </h3>
+        </div>
+    </div>
+    <section id="about" class="section">
+        <div class="container">
+            <h3>About Me</h3>
+            <h4 class="centered-paragraph">
+            </h3>
+            <div class="boxes">
+                <div class="skills-box">
+                    <h4>Skills</h4>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C Programming</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                <div class="self-study-box">
+                    <h4>Self Study</h4>
+                    <ul>
+                        <li>Software Tools</li>
+                        <li>Data Science</li>
+                        <li>Computer Vision</li>
+                    </ul>
+                </div>
+                <div class="interests-box">
+                    <h4>Interests</h4>
+                    <ul>
+                        <li>Cybersecurity</li>
+                        <li>Networking</li>
+                        <li>Web Development</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h3>Portfolio</h3>
+            <div class="project-boxes">
+                <div class="project-item">
+                    <div class="project-photo">
+                        <img src="images/image_2020-10-30_092502.png" alt="Project 1">
+                    </div>
+                    <h4>Smart Dustbin</h4>
+                </div>
+                <div class="project-item">
+                    <div class="project-photo">
+                        <img src="images/Auto-Intensity-Control-of-Street-Lights-using-Arduino-Circuit-Diagram.jpg" alt="Project 2">
+                    </div>
+                    <h4>Automatic Intensity Controller</h4>
+                </div>
+                <div class="project-item">
+                    <div class="project-photo">
+                        <img src="images/Simulation-of-Single-Phase-Full-Bridge-Inverter-using-Matlab-Simulink.png" alt="Project 3">
+                    </div>
+                    <h4>Single phase full bridge inverter</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    
+    <section id="contact" class="section">
+        <div class="container">
+            <h3>Contact Me</h3>
+            <p>Connect with me for any queries: <a href="mailto:sanjayacharya421@gmail.com">sanjayacharya421@gmail.com</a></p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script>
+window.addEventListener("scroll", function () {
+    var headerContainer = document.querySelector(".header-container");
+    if (window.pageYOffset > headerContainer.offsetHeight) {
+        headerContainer.style.position = "fixed";
+    } else {
+        headerContainer.style.position = "relative";
+    }
+});
+</script>
+<script>
+    window.addEventListener("scroll", function () {
+        var headerContainer = document.querySelector(".header-container");
+        if (headerContainer) {
+            if (window.pageYOffset > headerContainer.offsetHeight) {
+                headerContainer.style.position = "fixed";
+            } else {
+                headerContainer.style.position = "relative";
+            }
+        }
+    });
+    </script>
+</body>
+</html>
